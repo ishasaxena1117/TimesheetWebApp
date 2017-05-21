@@ -1,0 +1,57 @@
+<html>
+
+<head>
+    <title> Timesheet</title>
+    <script src="timesheet.js"></script>
+    <link rel="stylesheet" href="timesheet.css">
+    
+
+</head>
+
+<body onload="selectCurrentWeek();">
+    <table class="timesheet">
+        <tr>
+            <th colspan="4" width='25%' border=0>
+                Timesheet
+            </th>
+        </tr>
+        <tr>
+            <td> Employee Name
+            </td>
+            <td>
+                <input type="text" id="txtName" name="empName" class="textBox" maxlength="50" onkeyup="validateAlphabets(this);">
+            </td>
+            <td> Project</td>
+            <td>
+                <input type="text" id="txtprojName" name="pName" class="textBox" maxlength="50">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Week Ending
+            </td>
+            <td >
+                <input type="date" id="txtWeek" name="week" onchange="createGrid()">
+
+            </td>
+            <td>
+                Rate/hour
+            </td>
+            <td>
+                <input type="text" id="txtRate" name="rate" class="numberTextbox" onkeyup="validateNumeric(this);" maxlength="10" >
+
+            </td>
+        </tr>
+    </table>
+    </br>
+    <div id="Datetable"></div>
+    </br>
+    </br>
+
+    <div id="Date"></div>
+    <div id="printButton" align="right">
+        <input type ="button" onclick="javascript:printPage()" value="Print">
+
+    </div </body>
+
+</html>

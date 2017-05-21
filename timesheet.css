@@ -1,0 +1,57 @@
+
+
+ body{
+ margin-top: 50px;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 30px; }
+
+table.timesheet , table.employeeTable{
+	font-family: verdana,arial,sans-serif;
+	font-size:12px;
+	color:#333333;      
+	border-width: 1px;
+	border-color: #999999;
+	border-collapse: collapse;
+    width: 100%;
+}
+table.timesheet th {
+	background-color:#E8E8E8;
+	border-width: 1px;
+	padding: 5px;
+	border-style: solid;
+	border-color: #a9c6c9;
+}
+table.timesheet , table.employeeTable tr {
+	background-color:'#ffffff';    
+}
+
+table.timesheet td, table.employeeTable td {
+	border-width: 1px;
+	padding: 5px;
+	border-style: solid;
+	border-color: #a9c6c9;
+    /*overflow: hidden;*/
+     word-wrap: break-word;
+}
+p {
+font-family: verdana,arial,sans-serif;
+	font-size:12px;
+}
+
+.textBox 
+{
+	    width: 300px;
+
+}
+
+.numberTextbox{
+        text-align: right;
+}
+
+ @page {
+  size: auto;
+  margin: 0;
+  size: landscape;
+       }
+
